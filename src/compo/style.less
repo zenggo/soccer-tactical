@@ -1,0 +1,187 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #616467;
+}
+
+.draw-block {
+  padding: 10px 0;
+}
+.draw-block:hover {
+  background: #787879;
+}
+.draw-btn {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  line-height: 2em;
+}
+.draw-btn:hover {
+  color: #419adf;
+  cursor: pointer;
+}
+.draw-btn.draw-btn.checked:hover {
+  color: #787879;
+}
+.draw-btn.checked {
+  background: #419adf;
+}
+.line-color-block {
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.line-color-block div {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  transition: transform 0.5s;
+}
+.line-color-block div:hover {
+  transform: rotate(45deg);
+  transition: transform 0.5s;
+}
+.line-color-block div.selected {
+  transform: rotate(135deg);
+  transition: transform 0.2s;
+}
+.line-width-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.line-width-btn {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.line-width-btn div {
+  border-radius: 999px;
+  background: #27292a;
+  transition: transform 0.5s;
+}
+.line-width-btn div.selected {
+  transform: rotateX(180deg);
+  transition: transform 0.2s;
+  background: #fff;
+}
+.line-width-btn:hover div {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+
+.line-style-block {
+  box-sizing: border-box;
+  padding: 0 20px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.line-style-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  width: 35%;
+  height: 100%;
+  transition: transform 0.2s;
+}
+.line-style-btn:not(.selected):hover div {
+  transform: rotate(15deg);
+  transition: transform 0.5s;
+}
+.line-style-btn.selected {
+  transform: rotate(350deg);
+  transition: transform 0.5s;
+  
+}
+.selected .line-normal {
+  background: #fff;
+}
+.line-normal {
+  height: 8px;
+  background: #27292a;
+}
+.selected .line-dash {
+  border-bottom: 8px dashed #fff;
+}
+.line-dash {
+  border-bottom: 8px dashed #27292a;
+}
+
+
+.ele-block {
+  width: 100%;
+  height: 30%;
+  padding: 10px 10%;
+  box-sizing: border-box;
+  overflow: scroll;
+  text-align: center;
+}
+.ele-block:hover {
+  background: #787979;
+}
+
+.player-element {
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+.player-element:hover {
+  background: #419adf;
+}
+.player-element img {
+  height: 100%;
+}
+
+.tool-bar {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.tool-box-left, .tool-box-right {
+  height: 100%;
+  display: flex;
+  background: #27292a;
+}
+.tool-item {
+  padding: 0 15px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+.tool-item:hover {
+  background: #57595a;
+}
+
+.tool-item.disabled {
+  cursor: not-allowed;
+}
+
+.arrow-active {
+  color: #239336;
+}
+
+.ok-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -50px;
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  background: #419adf;
+  color: #fff;
+  text-align: center;
+}
+.ok-btn:hover {
+  cursor: pointer;
+  background: #2a6796;
+}

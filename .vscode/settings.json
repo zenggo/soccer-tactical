@@ -1,0 +1,16 @@
+{
+  "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/node_modules": true,
+      "**/.DS_Store": true
+  },
+  "search.exclude": {
+      "**/node_modules": true,
+      "**/vendors": true
+  },
+  "editor.tabSize": 2,
+  "git.ignoreLimitWarning": true
+}
